@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+<body>
+    <header>
+        <nav >
+            <a href="index.html" class="logo"><span>Mc</span>Fit's</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+               </div>
+
+            <ul class="nav-list">
+                    
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+
+                <li>
+                     <a href="produtos.html">Planos</a>
+                </li>
+
+                <li>
+                      <a href="nossa-equipe.html">Equipe</a>
+                </li>
+
+                <li>
+                      <a href="contato.html">contato</a>
+                </li>
+            </ul>
+
+            <a href="contato.html"><button class="btn matricula">Matricule-se</button></a>  
+        </nav>
+
+
+    </header>   
+
+    <section class="produtos-principal">
+
+        <div class="main-produtos">
+
+        <div class="prod-container">
+            <div class="textos-produtos">
+            <h2>Nossos Produtos e serviços</h2>
+            <p class="texto-produtos">Aqui na Mcfits contamos com profissionais de alto padrão e uma restaurante especializado em servir alimentacao saudavel <br>
+            na seção abaixo, você pode contar com uma calculadora para te ajudar a escolher o plano que melhor irá servi-lo</p>
+            </div>
+        </div>
+
+      
+
+        <div class="prod-container imglayout">
+            <img src="img/strong1.png" alt="" class="img-01">
+            <div class="imagens-prod">
+                <img src="img/strong2.png" alt="">
+                <img src="img/strong3.png" alt="">
+             
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <section class="osplanos">
+
+<div class="container_planos">
+
+    <div class="box_osplanos plano1">
+        <img src="img/cutting.jpg" alt="">
+        <div class="infoplanos">
+            <h3>Cutting</h3>
+            <p> Ideal para aqueles que estão com seu IMC elevado. Esse plano é focado na diminuição do percentual de gordura, ao mesmo tempo que você constroi musculos.</p>
+        
+            <span>Calcule seu imc e descubra o valor de seu plano</span>
+        </div>
+   
+
+    </div>
+    
+    
+    <div class="box_osplanos plano2">
+        <img src="img/bulking.jpg" alt="">
+        <div class="infoplanos">
+            <h3>Bulking</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi delectus natus ex soluta. Error veniam officia sequi nostrum nihil ullam, tenetur unde dicta architecto nisi! Qui culpa dicta vero.</p>
+        
+            <span>Calcule seu imc e descubra o valor de seu plano</span>
+        </div>
+       
+       
+    
+        </div>
+
+        <div class="box_osplanos plano3">
+            <img src="img/manutencao.jpg" alt="">
+            <div class="infoplanos">
+                <h3>Manutenção</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi delectus natus ex soluta. Error veniam officia sequi nostrum nihil ullam, tenetur unde dicta architecto nisi! Qui culpa dicta vero.</p>
+            
+                <span>Calcule seu imc e descubra o valor de seu plano</span>
+            </div>
+        
+            </div>
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+
+    <section class="sec_form_imc">  
+
+
+    <div class="conteudo_form2_imc">
+        <h1>Calculadora de IMC </h1>
+
+
+    <form id="form_imc">
+    <div> 
+        <input type="number" placeholder="Digite sua altura em CM (ex : 1.64)" class="inputs_imc required_imc altura" id="altura">
+        <span class="span-required_imc">Nome deve ter no minimo 3 caracteres.</span>
+
+    </div>
+    <div> 
+        <input type="number" placeholder="Digite o seu peso em KG (ex:63)" class="inputs_imc required_imc peso" id="peso">
+        <span class="span-required_imc">Seu telefone deve ter no minimo 8 digitos.</span>
+
+    </div>
+   
+   
+    <p>Sexo</p>
+    <div class="box-select_imc">
+        
+            <div>
+                <input type="radio" id="m" value="m" name="sexo">
+                <label for="m">Masculino</label>
+            </div>
+
+            <div>
+                <input type="radio" id="f" value="f" name="sexo">
+                <label for="f">Feminino</label>
+
+            </div>
+
+           
+    </div>
+    <button class="btn btn_imc" type="button" onclick="calculoImc()">Calcular</button>        
+</form>
+
+
+
+</div>
+<div class="plano_ideal">
+        
+    <h2 id="seu_imc">Descubra qual é o melhor plano para seu corpo!</h2>
+
+    
+        
+        <div class="planos_box">
+            
+            
+            
+            
+                <img src="img/logo só marca.png" alt="" id="fotoplano">
+            
+            
+                <h2 id="titulo_plano"></h2>
+            
+                <p class="texto" id="textoplan">Preencha a calculadora da forma correta e veja seu resultado</p>    
+
+                <P id="preco"></P>
+        
+
+       
+
+    </div>
+
+
+</div>
+</section>   
+<footer class="rodape">
+    <div class="boxs">
+        <h2>Início</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Planos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="nossa-equipe.html">Nossa Equipe</a></li>
+        </ul>
+    </div>
+ 
+    <div class="boxs">
+        <h2>Sobre nós</h2>
+        <p>Criada em 1995, pensando principalmente nos atletas profissionais e amadores que muitas vezes gastam horas preparando dezenas de marmitas para pré e pós treino, a McFit’s uniu o útil ao agradável criando uma rede de fast-food dentro de suas academias para facilitar sua vida. Nossos cardápios são pensados para os mais diversos tipos de dieta, de dietas hipertróficas até o low carb.</p>
+    </div>
+
+   
+    </div>
+    
+</footer>
+
+<div class="redes">
+    <div class="logofooter">
+        <img src="../McFit´s/img/logopng.png" alt="">
+    </div>
+
+    <div class="sociais">
+        <div class="social">
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <div class="social">
+            <a href="#">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+
+                    
+            </a>
+        </div>
+
+        <div class="social">
+            <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+</div>
+<script src="script/mobile-navbar.js"></script> 
+</body>
+</html>
